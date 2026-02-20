@@ -75,15 +75,12 @@ Validar o tratamento de erro do sistema quando um pagamento é recusado por sald
 
 | Passo | Ação | Resultado Esperado |
 | --- | --- | --- |
-| 1 | Clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
-| 2 | Selecionar um plano disponível (ex: "Essencial") e avançar. | O usuário é direcionado para a etapa de seleção de recorrência. |
-| 3 | Selecionar uma recorrência (ex: "Mensal") e avançar. | O preço é atualizado conforme a seleção. O usuário é direcionado para a etapa de dados pessoais. |
-| 4 | Preencher todos os campos obrigatórios de dados pessoais e endereço com informações válidas e avançar. | O usuário é direcionado para a etapa de pagamento. |
-| 5 | Preencher todos os campos de pagamento com os dados do cartão Inválido (Saldo Insuf.) da massa de dados. | - |
-| 6 | Submeter o formulário de pagamento (clicar em "Confirmar Pagamento"). | 
-3. O pagamento é recusado.
-4. O usuário permanece na tela de pagamento.
-5. Deve ser exibida a seguinte notificação: ”Transação não autorizada. Entre em contato com o emissor do cartão.” 
+| 1 | O usuário clica no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
+| 2 | O usuário seleciona um plano disponível (ex: "Essencial") e clica no botão "Avançar". | O usuário é direcionado para a etapa de seleção de frequência de entrega. |
+| 3 | O usuário seleciona uma frequência de entrega (ex: "Mensal") e clica no botão "Avançar". | O usuário é direcionado para a etapa de dados pessoais. |
+| 4 | O usuário preenche todos os campos obrigatórios de dados pessoais e endereço com informações válidas e clica no botão "Avançar". | O usuário é direcionado para a etapa de pagamento. |
+| 5 | O usuário preenche todos os campos de pagamento com os dados do cartão Inválido (Saldo Insuf.) da massa de dados e clica no botão "Finalizar Assinatura". | Aparece uma mensagem de erro **Pagamento Recusado** |
+3. O usuário permanece na tela de pagamento e não é possível avançar com o plano de assinatura sem um cartão válido.” 
 
 ---
 
