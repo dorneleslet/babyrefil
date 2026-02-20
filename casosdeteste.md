@@ -55,8 +55,7 @@ Validar o fluxo de adesão bem-sucedido, desde a seleção do plano até a confi
 | 2 | O usuário deve selecionar um plano disponível (ex: "Essencial") e clicar no botão "Avançar". | O usuário é direcionado para a etapa de seleção de frequência. |
 | 3 | O usuário deve selecionar uma frequência (ex: "Mensal") e clicar no botão "Avançar". | O usuário é direcionado para a etapa de dados pessoais. |
 | 4 | O usuário deve preencher todos os campos obrigatórios de dados pessoais e endereço com informações válidas da e clicar no botão "Avançar". | O usuário é direcionado para a etapa de pagamento. |
-| 5 | O usuário deve preencher todos os campos de pagamento com os dados do cartão Válido (Visa) da massa de dados e clicar no botão "Finalizar Assinatura". | - |
-3. O pagamento é processado com sucesso.
+| 5 | O usuário deve preencher todos os campos de pagamento com os dados do cartão Válido (Visa) da massa de dados e clicar no botão "Finalizar Assinatura". | O pagamento é processado com sucesso. |
 4. O usuário é redirecionado para a página de confirmação de assinatura.
 5. A página de confirmação exibe o plano escolhido, a frequência, e a data estimada de entrega.
 
@@ -84,7 +83,7 @@ Validar o tratamento de erro do sistema quando um pagamento é recusado por sald
 
 ---
 
-### CT003: Adesão com Falta de Dados Válidos
+### CT003: Adesão com Falta de Dados Pessoais Válidos
 
 ### Objetivo
 
@@ -92,16 +91,15 @@ Validar o tratamento de erro do sistema quando o usuário não preenche os dados
 
 ### Pré-condições
 
-1. Usuário possui os dados do cartão Inválido (Saldo Insuf.).
-2. Usuário possui dados pessoais e de endereço válidos.
+1. Usuário possui os dados pessoais válidos. 
 
 | Passo | Ação | Resultado Esperado |
 | --- | --- | --- |
-| 1 | Clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
-| 2 | Selecionar um plano disponível (ex: "Essencial") e avançar. | O usuário é direcionado para a etapa de seleção de recorrência. |
-| 3 | Selecionar uma recorrência (ex: "Mensal") e avançar. | O preço é atualizado conforme a seleção. O usuário é direcionado para a etapa de dados pessoais. |
-| 4 | O usuário não preenche os dados válidos. | Deve ser exibida uma mensagem de erro. |
-3. O usuário permanece na tela de dados e não pode avançar para a próxima etapa.
+| 1 | O usuário clica no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
+| 2 | O usuário deve selecionar um plano disponível (ex: "Essencial") e clicar no botão "Selecionar Plano". | O usuário é direcionado para a etapa de seleção de frequência de entrega. |
+| 3 | O usuário deve selecionar a frequência da entrega (ex: "Mensal") e clicar no botão "Avançar". | O usuário é direcionado para a etapa de dados pessoais. |
+| 4 | O usuário não preenche os dados válidos. | É exibido as mensagens de erro abaixo de todos os campos. |
+2. O usuário permanece na tela de dados e não pode avançar para a próxima etapa.
 
 ---
 
@@ -117,9 +115,9 @@ Validar o tratamento de erro do sistema quando o usuário não preenche os dados
 
 | Passo | Ação | Resultado Esperado |
 | --- | --- | --- |
-| 1 | Clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
-| 2 | Selecionar um plano disponível (ex: "Essencial") e avançar. | O usuário é direcionado para a etapa de seleção de recorrência. |
-| 3 | Selecionar uma recorrência (ex: "Mensal") e avançar. | O preço é atualizado conforme a seleção. O usuário é direcionado para a etapa de dados pessoais. |
+| 1 | O usuário deve clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
+| 2 | O usuário deve selecionar um plano disponível (ex: "Essencial") e clicar no botão "Selecionar Plano". | O usuário é direcionado para a etapa de seleção de frequência da entrega. |
+| 3 | O usuário deve selecionar uma frequência de entrega (ex: "Mensal") e clicar no botão "Avançar". | O usuário é direcionado para a etapa de dados pessoais. |
 | 4 | O usuário preenche o campo "Nome Completo" com o valor "Maria". | - |
 | 5 | O usuário preenche o campo "E-mail" com o valor "maria". | Aparece uma mensagem de erro **Inclua um "@" no endereço de email.** |
 | 6 | O usuário preenche o campo "Telefone" com o valor "1234". | Aparece uma mensagem de erro **Telefone inválido.** |
@@ -142,16 +140,15 @@ Validar o tratamento de erro do sistema quando o usuário não preenche os dados
 
 | Passo | Ação | Resultado Esperado |
 | --- | --- | --- |
-| 1 | Clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
-| 2 | Selecionar um plano disponível (ex: "Essencial") e avançar. | O usuário é direcionado para a etapa de seleção de recorrência. |
-| 3 | Selecionar uma recorrência (ex: "Mensal") e avançar. | O preço é atualizado conforme a seleção. O usuário é direcionado para a etapa de dados pessoais. |
-| 4 | Preencher todos os campos obrigatórios de dados pessoais e endereço com informações válidas e avançar. | O usuário é direcionado para a etapa de pagamento. |
+| 1 | O usuário deve clicar no botão "Assinar Agora". | O usuário é direcionado para a etapa de seleção de plano. Deve exibir os planos Essencial, Conforto e Completo. |
+| 2 | O usuário deve selecionar um plano disponível (ex: "Essencial") e clicar no botão "Selecionar Plano". | O usuário é direcionado para a etapa de seleção de frequência da entrega. |
+| 3 | O usuário deve selecionar uma frequência de entrega (ex: "Mensal") e clicar no botão "Avançar". | O usuário é direcionado para a etapa de dados pessoais. |
+| 4 | O usuário deve preencher todos os campos obrigatórios de dados pessoais e endereço com informações válidas e avançar. | O usuário é direcionado para a etapa de pagamento. |
 | 5 | O usuário não preenche o campo "Número do cartão". | Aparece uma mensagem de erro **Número do cartão inválido.** |
 | 6 | O usuário não preenche o campo "Nome no Cartão". | Aparece uma mensagem de erro **Nome no cartão é obrigatório.** |
 | 7 | O usuário não preenche o campo "Validade". | Aparece uma mensagem de erro **Validade inválida (MM/AA).** |
-| 6 | O usuário não preenche o campo "CVV". | Aparece uma mensagem de erro **CVV inválido.** |
-| 8 | O usuário não preenche o campo "CPF do Titular". | Aparece uma mensagem de erro **CPF inválido.** |
-10. O usuário permanece na tela enquanto não preencher os campos com os dados corretos.
+| 8 | O usuário não preenche o campo "CVV". | Aparece uma mensagem de erro **CVV inválido.** |
+| 9 | O usuário não preenche o campo "CPF do Titular". | Aparece uma mensagem de erro **CPF inválido.** |
+2. O usuário permanece na tela enquanto não preencher os campos com os dados corretos.
 
 ---
-

@@ -1,13 +1,14 @@
-Testes automatizados utilizando Playwright
+# Automação E2E - BabyRefil (Playwright)
 
 Este é um site de clube de assinatura de fraldas e artigos para bebê, apresentando planos e informações de como funciona.
-Utilizei o site para usar como base prática para consolidar meus conhecimentos em Playwright e JavaScript, além de reforçar habilidades importantes para QA, como testes automatizados, validação de dados.
+Projeto de automação end-to-end utilizando Playwright para aperfeiçoar meus conhecimentos em automação de testes, além de reforçar habilidades importantes para QA, como validação de dados, atenção aos detalhes.
 
-## Testes realizados
-- Testes de fluxo de assinatura (end-to-end)
-- Testes de validação de formulários, campos obrigatórios, formatos corretos, mensagens de erro apropriadas
-- Testes de navegação para validar se os links e navegações funcionam corretamente 
-- Testes com cenários negativos  
+## Cobertura de Testes
+- Fluxo completo de assinatura (E2E)
+- Validação de campos obrigatórios
+- Validação de formatos (email, telefone, CEP, CPF)
+- Tratamento de erro em pagamento recusado
+- Cenários positivos e negativos
 
 ## Tecnologias Utilizadas
 - Testes Automatizados: Playwright + JavaScript  
@@ -22,3 +23,17 @@ Durante o desenvolvimento deste projeto, pude reforçar conhecimentos em:
 - Testes práticos de interface e usabilidade  
 - Identificação de cenários de erro e entradas inválidas  
 - Atenção a detalhes em formulários e fluxos do sistema  
+
+## Como executar o projeto
+
+1. Clonar o repositório:
+git clone git@github.com:dorneleslet/babyrefil.git
+
+2. Instalar dependências:
+npm init playwright@latest
+
+3. Executar os testes:
+npx playwright test
+
+4. Abrir relatório:
+npx playwright show-report
